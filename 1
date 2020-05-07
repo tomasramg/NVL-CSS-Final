@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+     "http://www.w3.org/TR/html4/strict.dtd">
+     <html>
+         <head>
+             <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+             <title>Plantilla de tres columnas de ejemplo</title>
+             <style type="text/css">
+                 BODY {
+                     margin:0;
+                    font-size:80%;
+                }
+            
+                .marco {
+                    width:1000px;
+                    margin:10px auto 10px auto; /* Centrado horizontal */
+                }
+    
+                .cabecera {
+                    border:solid orange 1px;
+                    padding:10px;
+                }
+    
+                .cuerpo {
+                    padding:10px 0 10px 0;
+                    overflow-x:hidden;
+                    overflow-y:auto; /* Hace que se ajuste a la columna más alta en ff */
+                    height:100%; /* Hace que se ajuste a la columna más alta  en ie6 */
+                }
+    
+                .columna_derecha {
+                    float:right; /* Alineación a la derecha */
+                    width:270px;
+                    border:solid lightblue 1px;
+                    padding:10px;
+                }
+   
+                .columna_izquierda {
+                    float:left; /* Alineación a la izquierda */
+                    width:170px;
+                   border:solid lightblue 1px;
+                    padding:10px;
+                }
+    
+                .columna_central {
+                    margin-left:200px; /* Espacio para la columna izquierda */
+                    margin-right:300px; /* Espacio para la columna derecha */
+                    border:solid navy 1px;
+                    padding:10px;
+                }
+    
+                .pie {
+                    border:solid orange 1px;
+                    padding:10px;
+                    text-align:center;
+                    font-size:80%;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="marco">
+                <div class="cabecera">
+                    <h1>Cabecera</h1>
+                </div>
+                <div class="cuerpo">
+                    <div class="columna_derecha">
+                        <h2>Derecha</h2>
+                        Esta es la columna derecha, tiene un float right y entre
+                        el ancho (270px), relleno (10px+10px) y bordes(1px + 1px)
+                        tiene 292px;
+                    </div>
+                    <div class="columna_izquierda">
+                        <h2>Izquierda</h2>
+                        Esta es la columna izquierda, tiene un float right y entre
+                        el ancho (170px), relleno (10px+10px) y bordes(1px + 1px)
+                        tiene 192px;
+                    </div>
+                    <div class="columna_central">
+                        <h2>Centro</h2>
+                        La columna central se ajusta al máximo espacio posible (en
+                        este caso los 1000px que tiene el 'marco') dejando márgenes
+                        laterales a izquierda (200px) y derecha (300px) para las
+                        columnas.<br>
+                        Además el cuerpo se ajusta a la columna más larga de forma
+                        automática.
+                    </div>
+                </div>
+                <div class="pie">
+                    Este es el pie de la plantilla.
+                </div>
+            </div>
+        </body>
+    </html>
+    
+    
